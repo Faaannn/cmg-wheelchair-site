@@ -8,12 +8,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
         body { font-family: 'Inter', sans-serif; }
-        .hero-section {
-            background-image: linear-gradient(to bottom, rgba(248, 250, 252, 0.9) 0%, rgba(248, 250, 252, 0.4) 100%), url('images/hero-wheelchair.png');
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: center bottom;
-            min-height: 100vh;
+        .hero-gradient {
+            background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
         }
         .reveal {
             opacity: 0;
@@ -43,20 +39,24 @@
     </nav>
 
     <!-- Hero Section -->
-    <header class="hero-section flex items-start pt-48 md:pt-64">
-        <div class="max-w-7xl mx-auto px-6 w-full text-center">
-            <div class="reveal inline-block">
-                <h1 class="text-5xl md:text-8xl font-bold leading-tight mb-6">
+    <header class="hero-gradient min-h-screen flex items-center pt-20 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center w-full">
+            <div class="reveal z-10">
+                <h1 class="text-4xl lg:text-6xl xl:text-7xl font-bold leading-tight mb-6 whitespace-nowrap">
                     Make Independence <span class="text-blue-600">Easy</span>
                 </h1>
-                <h2 class="text-slate-600 text-3xl md:text-5xl font-bold mb-8">Powered by AI.</h2>
-                <p class="text-xl text-slate-700 mb-10 max-w-2xl mx-auto leading-relaxed font-medium">
+                <h2 class="text-slate-600 text-2xl md:text-4xl font-bold mb-8 italic">Powered by AI.</h2>
+                <p class="text-lg md:text-xl text-slate-600 mb-10 max-w-lg leading-relaxed">
                     AI-Powered, making independence easy. The CMG Wheelchair combines aerospace-grade stabilization with intuitive AI control.
                 </p>
-                <div class="flex justify-center space-x-4 mb-20">
-                    <a href="#drive" class="px-10 py-4 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 shadow-lg shadow-blue-200 transition-all">Discover AI Drive</a>
-                    <a href="#go" class="px-10 py-4 bg-white border border-slate-200 text-slate-700 font-semibold rounded-lg hover:bg-slate-50 transition-all">Explore Lightweight</a>
+                <div class="flex space-x-4">
+                    <a href="#drive" class="px-8 py-4 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 shadow-lg shadow-blue-200 transition-all">Discover AI Drive</a>
+                    <a href="#go" class="px-8 py-4 bg-white border border-slate-200 text-slate-700 font-semibold rounded-lg hover:bg-slate-50 transition-all">Explore Lightweight</a>
                 </div>
+            </div>
+            <div class="reveal delay-200 relative">
+                <!-- Image on the right, positioned to look like a grounded base -->
+                <img src="images/hero-wheelchair.png" alt="CMG Mobility Wheelchair" class="w-full h-auto object-contain transform translate-y-12 scale-110 drop-shadow-2xl">
             </div>
         </div>
     </header>
@@ -87,8 +87,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="reveal delay-200 text-center">
-                    <img src="images/hero-wheelchair.png" alt="Easy Drive Detail" class="rounded-2xl shadow-xl inline-block max-h-[400px]">
+                <div class="reveal delay-200">
+                    <img src="images/hero-wheelchair.png" alt="Easy Drive Detail" class="rounded-2xl shadow-xl">
                 </div>
             </div>
         </div>
