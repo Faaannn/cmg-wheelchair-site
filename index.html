@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CMG Wheelchair | Redefining Urban Mobility</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .hero-gradient {
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+        }
+        .reveal {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.8s ease-out;
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="bg-white text-slate-900">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="text-2xl font-bold tracking-tight text-blue-600">CMG<span class="text-slate-900">MOBILITY</span></div>
+            <div class="hidden md:flex space-x-8 text-sm font-medium uppercase tracking-widest text-slate-500">
+                <a href="#drive" class="hover:text-blue-600 transition">Easy Drive</a>
+                <a href="#confidence" class="hover:text-blue-600 transition">Easy Confidence</a>
+                <a href="#go" class="hover:text-blue-600 transition">Easy Go</a>
+                <a href="#connect" class="hover:text-blue-600 transition">Smart Connect</a>
+                <a href="#contact" class="bg-blue-600 text-white px-5 py-2 rounded-full hover:bg-blue-700 transition">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-gradient min-h-screen flex items-center pt-20">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+            <div class="reveal">
+                <h1 class="text-5xl md:text-7xl font-bold leading-tight mb-6">
+                    Make independence <span class="text-blue-600">easy</span>,<br>
+                    <span class="text-slate-600 text-3xl md:text-5xl">Powered by AI.</span>
+                </h1>
+                <p class="text-xl text-slate-600 mb-10 max-w-lg leading-relaxed">
+                    AI 赋能，让独立生活更简单。The CMG Wheelchair combines aerospace-grade stabilization with intuitive AI control.
+                </p>
+                <div class="flex space-x-4">
+                    <a href="#drive" class="px-8 py-4 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 shadow-lg shadow-blue-200 transition-all">Discover AI Drive</a>
+                    <a href="#go" class="px-8 py-4 bg-white border border-slate-200 text-slate-700 font-semibold rounded-lg hover:bg-slate-50 transition-all">Explore Lightweight</a>
+                </div>
+            </div>
+            <div class="reveal delay-200">
+                <img src="https://images.unsplash.com/photo-1544154846-f7f742ca39dd?auto=format&fit=crop&q=80&w=1200" alt="CMG Mobility" class="rounded-2xl shadow-2xl">
+            </div>
+        </div>
+    </header>
+
+    <!-- Section: Easy Drive -->
+    <section id="drive" class="py-24 bg-white border-b border-slate-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div class="reveal">
+                    <span class="text-blue-600 font-bold uppercase tracking-widest text-sm mb-4 block">核心卖点 1</span>
+                    <h2 class="text-4xl font-bold mb-6">易驾 (Easy Drive)</h2>
+                    <p class="text-lg text-slate-600 mb-8">不只是代步工具，更是你的智能出行伙伴。AI 赋能的驾控系统，让每一次出行都精准、顺畅、自由。</p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="w-10 h-10 bg-blue-50 text-blue-600 rounded-lg flex items-center justify-center shrink-0 mr-4 font-bold">01</div>
+                            <div>
+                                <h4 class="font-bold mb-1">EZ-Pass: AI 辅助通行</h4>
+                                <p class="text-slate-500 text-sm">高精度双雷达 + 270° 全时感知。窄门窄道一把过，无需反复试探。</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-10 h-10 bg-blue-50 text-blue-600 rounded-lg flex items-center justify-center shrink-0 mr-4 font-bold">02</div>
+                            <div>
+                                <h4 class="font-bold mb-1">精准驾控: 同级领先操控感</h4>
+                                <p class="text-slate-500 text-sm">Multi-level AI 控制算法深度调校。工业级双通讯架构，指令零延迟。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reveal delay-200">
+                    <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=1000" alt="Easy Drive" class="rounded-2xl shadow-xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section: Easy Confidence -->
+    <section id="confidence" class="py-24 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-16 items-center flex-row-reverse">
+                <div class="reveal md:order-last">
+                    <span class="text-blue-600 font-bold uppercase tracking-widest text-sm mb-4 block">核心卖点 2</span>
+                    <h2 class="text-4xl font-bold mb-6">易安 (Easy Confidence)</h2>
+                    <p class="text-lg text-slate-600 mb-8">五重主动安全防护，全天候、全场景守护每一次出行。</p>
+                    
+                    <ul class="space-y-4">
+                        <li class="flex items-center text-slate-700">
+                            <svg class="w-5 h-5 text-green-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <strong>170° 后视辅助系统</strong>：后方盲区一览无余，智能风险识别。
+                        </li>
+                        <li class="flex items-center text-slate-700">
+                            <svg class="w-5 h-5 text-green-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <strong>SOS 智能预警系统</strong>：行业首创主动+被动双模式报警。
+                        </li>
+                        <li class="flex items-center text-slate-700">
+                            <svg class="w-5 h-5 text-green-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <strong>陡坡缓降系统</strong>：重力感应，智能缓降，坡路不失控。
+                        </li>
+                    </ul>
+                </div>
+                <div class="reveal delay-200">
+                    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=1000" alt="Safety" class="rounded-2xl shadow-xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section: Easy Go -->
+    <section id="go" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16 reveal">
+                <span class="text-blue-600 font-bold uppercase tracking-widest text-sm mb-4 block">核心卖点 3</span>
+                <h2 class="text-4xl font-bold mb-4">易行 (Easy Go)</h2>
+                <p class="text-slate-500 max-w-2xl mx-auto">极致轻盈 · 5秒极简折叠 · 人体工学舒适座舱。重新定义出行体验。</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="p-8 bg-slate-50 rounded-2xl reveal">
+                    <h4 class="text-xl font-bold mb-4">T700 航空级碳纤维</h4>
+                    <p class="text-slate-500 text-sm">整车净重仅 15.9kg (35 lbs)。采用波音 787 同款材料，极致轻盈且强度不妥协。</p>
+                </div>
+                <div class="p-8 bg-slate-50 rounded-2xl reveal delay-100">
+                    <h4 class="text-xl font-bold mb-4">5秒极速折叠</h4>
+                    <p class="text-slate-500 text-sm">免弯腰设计，轻松收纳。折叠后最薄仅 380mm，支持 TSA 登机认证。</p>
+                </div>
+                <div class="p-8 bg-slate-50 rounded-2xl reveal delay-200">
+                    <h4 class="text-xl font-bold mb-4">科学泄压座舱</h4>
+                    <p class="text-slate-500 text-sm">乳胶记忆棉坐垫，-5° 座椅倾角。零负担久坐体验，透气不闷汗。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section: Smart Connect -->
+    <section id="connect" class="py-24 bg-slate-900 text-white">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <div class="reveal mb-12">
+                <span class="text-blue-500 font-bold uppercase tracking-widest text-sm mb-4 block">核心卖点 4</span>
+                <h2 class="text-4xl font-bold mb-6">智连 (Smart Connect)</h2>
+                <p class="text-slate-400 max-w-2xl mx-auto">一部手机，掌控全车；智能连接，延伸独立生活半径。</p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8 text-left">
+                <div class="p-8 border border-slate-800 rounded-2xl reveal">
+                    <h4 class="text-xl font-bold mb-2">专用智能 App</h4>
+                    <p class="text-slate-400">支持远程控制、自动诊断、智能副驾。通过 App 自定义 M 键功能，实现一键掉头。</p>
+                </div>
+                <div class="p-8 border border-slate-800 rounded-2xl reveal delay-100">
+                    <h4 class="text-xl font-bold mb-2">全时在线守护</h4>
+                    <p class="text-slate-400">休眠不断联，随唤随用。远程一键锁车，IoT 深度集成（5G/4G/Wifi/GPS/蓝牙）。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white py-16 border-t border-slate-100">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center text-slate-500 text-sm">
+            <div class="text-2xl font-bold tracking-tight text-blue-600 mb-4 md:mb-0">CMG<span class="text-slate-900">MOBILITY</span></div>
+            <p>&copy; 2026 CMG Mobility Inc. AI 赋能，让独立生活更简单。</p>
+            <div class="flex space-x-6 mt-4 md:mt-0">
+                <a href="#" class="hover:text-blue-600 transition">Privacy</a>
+                <a href="#" class="hover:text-blue-600 transition">Terms</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) entry.target.classList.add('active');
+            });
+        }, { threshold: 0.1 });
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>
