@@ -8,8 +8,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
         body { font-family: 'Inter', sans-serif; }
-        .hero-gradient {
-            background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+        .hero-bg {
+            background-color: #f1f5f9; /* Matches common product studio background */
+        }
+        .blend-multiply {
+            mix-blend-mode: multiply;
         }
         .reveal {
             opacity: 0;
@@ -39,7 +42,7 @@
     </nav>
 
     <!-- Hero Section -->
-    <header class="hero-gradient min-h-screen flex items-center pt-20 overflow-hidden">
+    <header class="hero-bg min-h-screen flex items-center pt-20 overflow-hidden">
         <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center w-full">
             <div class="reveal z-10">
                 <h1 class="text-4xl lg:text-6xl xl:text-7xl font-bold leading-tight mb-6 whitespace-nowrap">
@@ -55,8 +58,8 @@
                 </div>
             </div>
             <div class="reveal delay-200 relative">
-                <!-- Image on the right, positioned to look like a grounded base -->
-                <img src="images/hero-wheelchair.png" alt="CMG Mobility Wheelchair" class="w-full h-auto object-contain transform translate-y-12 scale-110 drop-shadow-2xl">
+                <!-- Applied blend-multiply to merge image background with section background -->
+                <img src="images/hero-wheelchair.png" alt="CMG Mobility Wheelchair" class="w-full h-auto object-contain transform translate-y-12 scale-110 blend-multiply">
             </div>
         </div>
     </header>
@@ -88,7 +91,7 @@
                     </div>
                 </div>
                 <div class="reveal delay-200">
-                    <img src="images/hero-wheelchair.png" alt="Easy Drive Detail" class="rounded-2xl shadow-xl">
+                    <img src="images/hero-wheelchair.png" alt="Easy Drive Detail" class="rounded-2xl blend-multiply">
                 </div>
             </div>
         </div>
